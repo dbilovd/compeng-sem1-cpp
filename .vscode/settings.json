@@ -20,6 +20,14 @@
         "new": "cpp",
         "ostream": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "functional": "cpp",
+        "iomanip": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "cmath": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
     }
 }
