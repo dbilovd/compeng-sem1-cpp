@@ -1,0 +1,96 @@
+cmake_minimum_required(VERSION 3.8)
+project(cpp)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES
+        Assignments/session-2.cpp
+        Labs/base/include/gtest/internal/custom/gtest-port.h
+        Labs/base/include/gtest/internal/custom/gtest-printers.h
+        Labs/base/include/gtest/internal/custom/gtest.h
+        Labs/base/include/gtest/internal/gtest-death-test-internal.h
+        Labs/base/include/gtest/internal/gtest-filepath.h
+        Labs/base/include/gtest/internal/gtest-internal.h
+        Labs/base/include/gtest/internal/gtest-linked_ptr.h
+        Labs/base/include/gtest/internal/gtest-param-util-generated.h
+        Labs/base/include/gtest/internal/gtest-param-util.h
+        Labs/base/include/gtest/internal/gtest-port-arch.h
+        Labs/base/include/gtest/internal/gtest-port.h
+        Labs/base/include/gtest/internal/gtest-string.h
+        Labs/base/include/gtest/internal/gtest-tuple.h
+        Labs/base/include/gtest/internal/gtest-type-util.h
+        Labs/base/include/gtest/gtest-death-test.h
+        Labs/base/include/gtest/gtest-message.h
+        Labs/base/include/gtest/gtest-param-test.h
+        Labs/base/include/gtest/gtest-printers.h
+        Labs/base/include/gtest/gtest-spi.h
+        Labs/base/include/gtest/gtest-test-part.h
+        Labs/base/include/gtest/gtest-typed-test.h
+        Labs/base/include/gtest/gtest.h
+        Labs/base/include/gtest/gtest_pred_impl.h
+        Labs/base/include/gtest/gtest_prod.h
+        Labs/base/src/main.cpp
+        Labs/base/tests/main_test.cpp
+        Labs/calculator/includes/gtest/internal/custom/gtest-port.h
+        Labs/calculator/includes/gtest/internal/custom/gtest-printers.h
+        Labs/calculator/includes/gtest/internal/custom/gtest.h
+        Labs/calculator/includes/gtest/internal/gtest-death-test-internal.h
+        Labs/calculator/includes/gtest/internal/gtest-filepath.h
+        Labs/calculator/includes/gtest/internal/gtest-internal.h
+        Labs/calculator/includes/gtest/internal/gtest-linked_ptr.h
+        Labs/calculator/includes/gtest/internal/gtest-param-util-generated.h
+        Labs/calculator/includes/gtest/internal/gtest-param-util.h
+        Labs/calculator/includes/gtest/internal/gtest-port-arch.h
+        Labs/calculator/includes/gtest/internal/gtest-port.h
+        Labs/calculator/includes/gtest/internal/gtest-string.h
+        Labs/calculator/includes/gtest/internal/gtest-tuple.h
+        Labs/calculator/includes/gtest/internal/gtest-type-util.h
+        Labs/calculator/includes/gtest/gtest-death-test.h
+        Labs/calculator/includes/gtest/gtest-message.h
+        Labs/calculator/includes/gtest/gtest-param-test.h
+        Labs/calculator/includes/gtest/gtest-printers.h
+        Labs/calculator/includes/gtest/gtest-spi.h
+        Labs/calculator/includes/gtest/gtest-test-part.h
+        Labs/calculator/includes/gtest/gtest-typed-test.h
+        Labs/calculator/includes/gtest/gtest.h
+        Labs/calculator/includes/gtest/gtest_pred_impl.h
+        Labs/calculator/includes/gtest/gtest_prod.h
+        Labs/calculator/tests/gtest/internal/custom/gtest-port.h
+        Labs/calculator/tests/gtest/internal/custom/gtest-printers.h
+        Labs/calculator/tests/gtest/internal/custom/gtest.h
+        Labs/calculator/tests/gtest/internal/gtest-death-test-internal.h
+        Labs/calculator/tests/gtest/internal/gtest-filepath.h
+        Labs/calculator/tests/gtest/internal/gtest-internal.h
+        Labs/calculator/tests/gtest/internal/gtest-linked_ptr.h
+        Labs/calculator/tests/gtest/internal/gtest-param-util-generated.h
+        Labs/calculator/tests/gtest/internal/gtest-param-util.h
+        Labs/calculator/tests/gtest/internal/gtest-port-arch.h
+        Labs/calculator/tests/gtest/internal/gtest-port.h
+        Labs/calculator/tests/gtest/internal/gtest-string.h
+        Labs/calculator/tests/gtest/internal/gtest-tuple.h
+        Labs/calculator/tests/gtest/internal/gtest-type-util.h
+        Labs/calculator/tests/gtest/gtest-death-test.h
+        Labs/calculator/tests/gtest/gtest-message.h
+        Labs/calculator/tests/gtest/gtest-param-test.h
+        Labs/calculator/tests/gtest/gtest-printers.h
+        Labs/calculator/tests/gtest/gtest-spi.h
+        Labs/calculator/tests/gtest/gtest-test-part.h
+        Labs/calculator/tests/gtest/gtest-typed-test.h
+        Labs/calculator/tests/gtest/gtest.h
+        Labs/calculator/tests/gtest/gtest_pred_impl.h
+        Labs/calculator/tests/gtest/gtest_prod.h
+        Labs/calculator/tests/main_tests.cpp
+        Labs/calculator/main.cpp
+        Labs/201709111956-tests-and-loops.cpp
+        hello.cpp
+        LICENSE
+        MakeFile
+        README.md)
+
+include_directories(.)
+include_directories(Assignments)
+include_directories(Labs)
+include_directories(Labs/base)
+include_directories(Labs/calculator)
+
+add_executable(cpp ${SOURCE_FILES})
