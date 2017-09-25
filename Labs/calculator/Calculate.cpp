@@ -4,8 +4,8 @@
 using namespace std;
 
 /**
-    * Constructors
-    */
+ * Constructors
+ */
 // new Calculate(+, 10, 5)
 Calculate::Calculate(double* resPtr, char operation, double firstNumber, double secondNumber) : 
     resPtr(resPtr), op(operation), a(firstNumber), b(secondNumber)
@@ -25,8 +25,8 @@ Calculate::Calculate(double* resPtr) :
 }
 
 /**
-    * Destructor
-    */
+ * Destructor
+ */
 //  ~Calculate() {
 //  }
 
