@@ -60,26 +60,31 @@ double Calculate::run()
  
      // Based on the operation provided, perform the calculation and update the value
      // of result
-     switch (opt) {
-         case '+' :
-             result = a + b;
-             break;
+    switch (opt) {
+        case '+' :
+            result = this->add(a, b);
+            // result = a + b;
+            break;
          
          case '-' :
-             result = a - b;
-             break;
+            result = this->sub(a, b);
+            //  result = a - b;
+            break;
  
          case '/' :
-             result = a / b;
-             break;
+            result = this->divide(a, b);
+            // result = a / b;
+            break;
  
          case '*' :
-             result = a * b;
-             break;
+            result = this->multiply(a, b);
+            // result = a * b;
+            break;
  
          case '%' :
-             result = (int) a % (int) b;
-             break;
+            result = this->modulo((int) a, (int) b);
+            // result = (int) a % (int) b;
+            break;
      }
  
      // Output the result
@@ -114,7 +119,7 @@ double Calculate::divide(double a, double b)
 }
 
 // Modulo
-int Calculate::modulo(double a, double b)
+int Calculate::modulo(int a, int b)
 {
-    return (int) a % (int) b;
+    return a % b;
 }
