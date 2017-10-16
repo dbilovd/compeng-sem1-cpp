@@ -36,6 +36,19 @@ int main ()
     // Variable to hold largest factor
     int largestFactor = 1;
 
+    // Since 2 is the only even prime number, process it seperately
+    if (number % 2 = 0) {
+        largestFactor = 2;
+
+        number = number / 2;
+        while (number % 2 == 0) {
+            number = number / 2;
+        }
+    }
+
+    // After 2 start processing from 3
+    factor = 3;
+
     // Factorise number until it gets to 0
     while (number > 1) {
 
@@ -54,8 +67,8 @@ int main ()
             }
         }
 
-        // Increment factor by one
-        factor++;
+        // Increment factor by 2 (considering only even numbers)
+        factor += 2;
     }
 
     cout << largestFactor << endl;
