@@ -37,7 +37,7 @@ int main ()
     int largestFactor = 1;
 
     // Since 2 is the only even prime number, process it seperately
-    if (number % 2 = 0) {
+    if (number % 2 == 0) {
         largestFactor = 2;
 
         number = number / 2;
